@@ -52,7 +52,7 @@ int main(){
 
         RGB_Color Morphed_Color = Morph_Color(Morph_Iter, 120, Start_Color, End_Color);
 
-        std::ifstream File("ascii_art/binary_love");
+        std::ifstream File("../ascii_art/binary_love");
         std::string File_Content = "";
         std::string File_Line = "";
 

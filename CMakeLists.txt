@@ -3,10 +3,8 @@ project(MyProject CXX)
 
 add_executable(MyProgram)
 
-target_sources(MyProgram PRIVATE
-    src/main.cpp
-    src/frame.cpp
-    src/framebuffer.cpp
-)
+file(GLOB SOURCES "src/*.cpp")
+target_sources(MyProgram PRIVATE ${SOURCES})
 
 target_include_directories(MyProgram PRIVATE $(CMAKE_CURRENT_SOURCE_DIR)/include)
+
